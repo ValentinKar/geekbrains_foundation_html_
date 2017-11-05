@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>контакты с администратором сайта</title>
@@ -7,7 +7,6 @@
 <body>
     <header>
         <ol>
-            Меню: 
             <li>
                 <a href="index.html">Главная</a>
             </li>
@@ -21,9 +20,52 @@
         <hr>
     </header>
     
+    <h1>Напишите нам</h1>
+    <form action="">
+        <fieldset>
+            <legend>
+                Ваши данные:
+            </legend>
+            <p>
+               <label>
+                    Имя:
+                    <input type="text" id="user_name" placeholder="Иван">
+                </label>
+            </p>
+            <p>
+               <label>
+                    E-mail:
+                    <input type="text" id="user_email" placeholder="mail@mail.ru">
+                </label>
+            </p>
+            <p>
+               <label>
+                    Тема:
+                    <input type="text" id="user_theme" placeholder="Тема">
+                </label>
+            </p>
+            <p>
+                <textarea name="user_question" id="user_question" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+            </p>
+            <input type="submit" value="Сохранить">
+            <input type="reset" value="Сбросить">
+        </fieldset>
+    </form>
+    
+    <h2>Адрес</h2>
+    <p>
+        Контактный телефон интернет-магазина:
+    </p>
+    <p>
+        Адрес: 
+    </p>
+    <p>
+        E-mail
+    </p>
+    
     <footer>
        <hr>
-        copyright&copy;2017
+        <p>copyright&copy;2017</p>
     </footer>
 </body>
 </html>
