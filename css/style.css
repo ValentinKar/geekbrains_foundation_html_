@@ -11,3 +11,16 @@ body {
 .img_product {
     width: 391px;
 }
+
+/* меню сайта */
+.menu li {
+    list-style-type: none;
+}
+
+/* текст меню сайта */
+.menu li a {
+    color: #006561;
+    font-size: 1.1em;
+    font-weight: bold;
+    font-family: Arial;
+}
