@@ -1,0 +1,13 @@
+body {
+    background-color: #f8f8f8;
+}
+
+/* изображение в каталоге */
+.img_catalog { 
+    width: 200px; 
+}
+
+/* изображение на странице товара */
+.img_product {
+    width: 391px;
+}
