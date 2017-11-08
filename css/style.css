@@ -18,9 +18,35 @@ body {
 }
 
 /* текст меню сайта */
-.menu li a {
+.menu a {
     color: #006561;
     font-size: 1.1em;
     font-weight: bold;
     font-family: Arial;
+}
+
+/* страница товара */
+/* заголовки страницы товара */
+.product h1, h2, h3 { 
+    color: black; 
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea; 
+}
+
+/* краткое описание товара */
+.product .short_description {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+/* подробное описание товара */
+.product .description {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
 }
