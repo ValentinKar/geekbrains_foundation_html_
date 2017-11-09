@@ -10,6 +10,7 @@ body {
 /* изображение на странице товара */
 .img_product {
     width: 391px;
+    border: 2px solid #1D7471; 
 }
 
 /* меню сайта */
@@ -49,4 +50,21 @@ body {
     font-weight: 400;
     line-height: 24px;
     text-align: left;
+}
+
+/* характеристики товара */
+.product li {
+    color: #585353;
+    font-family: serif;
+    list-style: square; 
+}
+
+/* страница контакты */
+/* поля формы */
+.question input[type="text"] {
+    width: 300px; 
+    height: 20px;
+    color: #1D7471;
+    font-style: italic;
+    font-size: 0.9em;
 }
