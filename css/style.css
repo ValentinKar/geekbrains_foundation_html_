@@ -73,17 +73,25 @@ h3 {
 }
 
 /* страница контакты */
-/* поля формы */
+/* шрифт текстовых полей формы */
 .question input[type="text"], 
 textarea {
     color: #1D7471;
     font-style: italic;
     font-size: 1em;
     font-family: "Times New Roman", serif, Verdana;
+    text-transform: capitalize; 
 }
 
-/* поля формы */
+/* размер текстовых полей формы */
 .question input[type="text"] {
     width: 300px; 
     height: 20px;
+}
+
+/* изменение цвета текстового поля e-mail */
+.question input[id="user_email"]:focus {
+    color: #93002F;
+    border-color: #93002F;
+    background-color: #FFDB73;
 }
