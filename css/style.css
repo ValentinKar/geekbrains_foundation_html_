@@ -14,7 +14,7 @@ body {
 }
 
 /* при наведении курсора на изображение
-на страницу товара рамка исчезает */
+на странице товара рамка исчезает */
 .img_product:hover {
     outline: none;
 }
@@ -85,11 +85,23 @@ h3 {
 }
 
 /* ячейки таблицы характеристик товара */
-.product td {
+.product td,
+th {
     border: 1px solid #1D7471;
     text-align: center;
     vertical-align: center;
     padding: 5px;
+}
+
+/* верхний ряд таблицы характеристик товара */
+.product th {
+    height: 50px;
+    background-color: #5CCDC9;
+}
+
+/* строчки таблицы желтым цветом */
+.product tr:nth-child(2n+1) {
+    background-color: #FFDB73;
 }
 
 /* страница контакты */
