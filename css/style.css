@@ -72,6 +72,20 @@ h3 {
     list-style-image: url("../img/gantel.jpg");
 }
 
+/* таблица характеристик товара */
+.product table {
+    border: 1px solid #1D7471;
+    border-collapse: collapse;
+}
+
+/* ячейки таблицы характеристик товара */
+.product td {
+    border: 1px solid #1D7471;
+    text-align: center;
+    vertical-align: center;
+    padding: 5px;
+}
+
 /* страница контакты */
 /* шрифт текстовых полей формы */
 .question input[type="text"], 
