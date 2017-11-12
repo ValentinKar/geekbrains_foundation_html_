@@ -13,6 +13,12 @@ body {
     outline: 2px solid #1D7471; 
 }
 
+/* при наведении курсора на изображение
+на страницу товара рамка исчезает */
+.img_product:hover {
+    outline: none;
+}
+
 /* логотип сайта */
 .header img {
     width: 250px;
