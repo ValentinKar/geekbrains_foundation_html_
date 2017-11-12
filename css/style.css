@@ -13,6 +13,17 @@ body {
     outline: 2px solid #1D7471; 
 }
 
+/* при наведении курсора на изображение
+на странице товара рамка исчезает */
+.img_product:hover {
+    outline: none;
+}
+
+/* логотип сайта */
+.header img {
+    width: 250px;
+}
+
 /* меню сайта */
 .menu li {
     list-style-type: none;
@@ -26,6 +37,10 @@ body {
     font-family: Arial;
 }
 
+.menu li:hover a {
+    color: #33CDC7;
+}
+
 /* страница товара */
 /* заголовки страницы товара */
 .product h1, 
@@ -35,6 +50,12 @@ h3 {
     font-size: 18px;
     font-weight: 400;
     background-color: #eaeaea; 
+}
+
+/* Первые буквы страницы товара */
+.product p:first-letter {
+    font-size: 20px;
+    color: #AA2A53;
 }
 
 /* краткое описание товара */
@@ -63,18 +84,52 @@ h3 {
     list-style-image: url("../img/gantel.jpg");
 }
 
+/* таблица характеристик товара */
+.product table {
+    border: 1px solid #1D7471;
+    border-collapse: collapse;
+}
+
+/* ячейки таблицы характеристик товара */
+.product td,
+th {
+    border: 1px solid #1D7471;
+    text-align: center;
+    vertical-align: center;
+    padding: 5px;
+}
+
+/* верхний ряд таблицы характеристик товара */
+.product th {
+    height: 50px;
+    background-color: #5CCDC9;
+}
+
+/* строчки таблицы желтым цветом */
+.product tr:nth-child(2n+1) {
+    background-color: #FFDB73;
+}
+
 /* страница контакты */
-/* поля формы */
+/* шрифт текстовых полей формы */
 .question input[type="text"], 
 textarea {
     color: #1D7471;
     font-style: italic;
     font-size: 1em;
     font-family: "Times New Roman", serif, Verdana;
+    text-transform: capitalize; 
 }
 
-/* поля формы */
+/* размер текстовых полей формы */
 .question input[type="text"] {
     width: 300px; 
     height: 20px;
+}
+
+/* изменение цвета текстового поля e-mail */
+.question input[id="user_email"]:focus {
+    color: #93002F;
+    border-color: #93002F;
+    background-color: #FFDB73;
 }
