@@ -7,13 +7,14 @@ body {
     margin: 0 auto;
 }
 
+/* vvvvvvvvvvvv */
+/* чердак сайта */
 /* чердак сайта с лого и меню */
 .header {
     display: flex;
     justify-content: space-between;
     height: 100px;
 }
-
 /* логотип сайта */
 .logo {
     width: 250px;
@@ -21,13 +22,11 @@ body {
     margin-top: 20px;
     margin-left: 30px;
 }
-
 /* меню сайта */
 .menu {
     margin-top: 20px;
     margin-right: 30px;
 }
-
 /* пункты списка меню */
 .menu li {
     float: left;
@@ -36,7 +35,6 @@ body {
     height: 40px;
     text-align: center;
 }
-
 /* ссылки меню сайта */
 .menu a {
     color: #006561;
@@ -44,12 +42,14 @@ body {
     font-weight: bold;
     font-family: Arial;
 }
-
 /* подсветка ссылок меню */
 .menu a:hover {
     color: #33CDC7;
 }
+/* чердак сайта */
+/* ^^^^^^^^^^^^ */
 
+/* vvvvvvvvvvvv */
 /* подвал сайта */
 .footer {
     height: 50px;
@@ -57,23 +57,39 @@ body {
     padding-right: 20px;
     padding-top: 10px;
 }
-
 /* текст в подвале сайта смещен вправо */
 .footer p {
     text-align: right;
 }
+/* подвал сайта */
+/* ^^^^^^^^^^^^ */
 
-/* изображение в каталоге */
-.img_catalog { 
+/* vvvvvvvvvvvvvvvv */
+/* станица каталога */
+/* область каталога */
+.catalog {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 10px;
+}
+/* подобласть в каталоге для одного товара */
+.catalog_product {
+    width: 300px;
+}
+/* изображение товара в подобласти каталога */
+.img_catalog img { 
     width: 200px; 
 }
-
-/* при наведении курсора на изображение
-на странице товара рамка исчезает */
-.img_product:hover {
-    outline: none;
+/* название товара в подобласти каталога */
+.item_catalog {
+    height: 100px;
+    margin-top: 10px;
 }
+/* станица каталога */
+/* ^^^^^^^^^^^^^^^^ */
 
+/* vvvvvvvvvvvvvvv */
 /* страница товара */
 /* заголовки страницы товара */
 .product h1, 
@@ -85,26 +101,27 @@ h3 {
     background-color: #eaeaea; 
     clear: both;
 }
-
 /* изображение на странице товара */
 .img_product {
-    outline: 2px solid #1D7471; 
     float: left;
     margin-right: 10px;
     margin-bottom: 10px;
 }
-
 /* ширина изображения товара */
 .img_product img {
+    outline: 2px solid #1D7471; 
     width: 391px;
 }
-
+/* при наведении курсора на изображение
+на странице товара рамка исчезает */
+.img_product img:hover {
+    outline: none;
+}
 /* Первые буквы страницы товара */
 .product p:first-letter {
     font-size: 20px;
     color: #AA2A53;
 }
-
 /* краткое описание товара */
 .product .short_description {
     color: #707070;
@@ -113,27 +130,23 @@ h3 {
     line-height: 16px;
     height: 130px;
 }
-
 /* кнопка купить на странице товара */
 .product input[type="submit"] {
     width: 220px;
     height: 40px;
     border-radius: 10px;
 }
-
 /* наведение на кнопку купить */
 .product input[type="submit"]:hover {
     color: limegreen;
     border-color: limegreen;
     
 }
-
 /* нажатие на кнопку купить */
 .product input[type="submit"]:focus {
     color: gold;
     border-color: gold;
 }
-
 /* подробное описание товара */
 .product .description {
     color: #484343;
@@ -142,7 +155,6 @@ h3 {
     line-height: 24px;
     text-align: left;
 }
-
 /* характеристики товара */
 .product-characteristic li {
     color: #585353;
@@ -150,13 +162,11 @@ h3 {
     list-style: square; 
     list-style-image: url("../img/gantel.jpg");
 }
-
 /* таблица характеристик товара */
 .product table {
     border: 1px solid #1D7471;
     border-collapse: collapse;
 }
-
 /* ячейки таблицы характеристик товара */
 .product td,
 th {
@@ -165,28 +175,27 @@ th {
     vertical-align: center;
     padding: 5px;
 }
-
 /* верхний ряд таблицы характеристик товара */
 .product th {
     height: 50px;
     background-color: #5CCDC9;
 }
-
 /* строчки таблицы желтым цветом */
 .product tr:nth-child(2n+1) {
     background-color: #FFDB73;
 }
-
 /* ширина столбца таблицы Жесткость линз */
 .product .table_hardness {
     width: 90px;
 }
-
 /* ширина столбца таблицы Компенсирующая способность */
 .product .table_offset {
     width: 140px;
 }
+/* страница товара */
+/* ^^^^^^^^^^^^^^^ */
 
+/* vvvvvvvvvvvvvvvvv */
 /* страница контакты */
 /* шрифт текстовых полей формы */
 .question input[type="text"], 
@@ -197,16 +206,16 @@ textarea {
     font-family: "Times New Roman", serif, Verdana;
     text-transform: capitalize; 
 }
-
 /* размер текстовых полей формы */
 .question input[type="text"] {
     width: 300px; 
     height: 20px;
 }
-
 /* изменение цвета текстового поля e-mail */
 .question input[type="email"]:focus {
     color: #93002F;
     border-color: #93002F;
     background-color: #FFDB73;
 }
+/* страница контакты */
+/* ^^^^^^^^^^^^^^^^^ */
