@@ -68,12 +68,6 @@ body {
     width: 200px; 
 }
 
-/* изображение на странице товара */
-.img_product {
-    width: 391px;
-    outline: 2px solid #1D7471; 
-}
-
 /* при наведении курсора на изображение
 на странице товара рамка исчезает */
 .img_product:hover {
@@ -89,6 +83,16 @@ h3 {
     font-size: 18px;
     font-weight: 400;
     background-color: #eaeaea; 
+    clear: both;
+}
+
+/* изображение на странице товара */
+.img_product {
+    width: 391px;
+    outline: 2px solid #1D7471; 
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 /* Первые буквы страницы товара */
@@ -98,7 +102,7 @@ h3 {
 }
 
 /* краткое описание товара */
-.product .short_description {
+.short_description p {
     color: #707070;
     font-size: 14px;
     font-style: italic;
