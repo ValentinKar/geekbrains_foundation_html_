@@ -2,6 +2,11 @@ body {
     background-color: #f8f8f8;
 }
 
+.container {
+    width: 700px;
+    margin: 0 auto;
+}
+
 /* изображение в каталоге */
 .img_catalog { 
     width: 200px; 
@@ -107,6 +112,16 @@ th {
 /* строчки таблицы желтым цветом */
 .product tr:nth-child(2n+1) {
     background-color: #FFDB73;
+}
+
+/* ширина столбца таблицы Жесткость линз */
+.product .table_hardness {
+    width: 90px;
+}
+
+/* ширина столбца таблицы Компенсирующая способность */
+.product .table_offset {
+    width: 140px;
 }
 
 /* страница контакты */
