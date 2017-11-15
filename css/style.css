@@ -50,6 +50,19 @@ body {
     color: #33CDC7;
 }
 
+/* подвал сайта */
+.footer {
+    height: 50px;
+    background-color: #FFDB73;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+/* текст в подвале сайта смещен вправо */
+.footer p {
+    text-align: right;
+}
+
 /* изображение в каталоге */
 .img_catalog { 
     width: 200px; 
@@ -66,7 +79,6 @@ body {
 .img_product:hover {
     outline: none;
 }
-
 
 /* страница товара */
 /* заголовки страницы товара */
