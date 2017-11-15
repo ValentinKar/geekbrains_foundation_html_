@@ -37,7 +37,7 @@ body {
     font-family: Arial;
 }
 
-.menu li:hover a {
+.menu a:hover {
     color: #33CDC7;
 }
 
@@ -75,8 +75,7 @@ h3 {
     text-align: left;
 }
 
-/* характеристики товара 
-.product:not(.menu) li { */
+/* характеристики товара */
 .product-characteristic li {
     color: #585353;
     font-family: serif;
@@ -128,7 +127,7 @@ textarea {
 }
 
 /* изменение цвета текстового поля e-mail */
-.question input[id="user_email"]:focus {
+.question input[type="email"]:focus {
     color: #93002F;
     border-color: #93002F;
     background-color: #FFDB73;
